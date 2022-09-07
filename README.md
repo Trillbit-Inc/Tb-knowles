@@ -53,13 +53,6 @@ otherwise license program will report permission or busy error.
 
 Once python setup is complete run the license program in the *scripts* folder.
 
-**NOTE: DO NOT share this program to customers. They should use online-backend based program to generate license.**
-
-```
-> cd license
-> python main.py
-```
-
 Follow the instructions the from the license program. If successful you will see LED0 on SAMD21 board blink once when IA61x is configured. And blink 4 times when Trillbit algorithm accepts authentication and is ready for data detection.
 
 # Using Demo
