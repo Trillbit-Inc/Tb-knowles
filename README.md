@@ -1,7 +1,7 @@
 # Setup Boards
 Connect the IA611 Xplained Pro extension board to **EXT2** connector of SAMD21 Xplained Pro board as shown below.
 
-![Board connections](IA611-SAMD21-DEMO1/Documents/images/board.jpg)
+![Board connections](IA611-SAMD21-DEMO/Documents/images/board.jpg)
 
 # Setup Serial Terminal Program
 You can use any serial terminal program to view the output from Demo application.
@@ -11,22 +11,22 @@ Demo application uses EDBG UART to communicate with PC/User.
 
 Connect the *DEBUG USB* port of the board to PC with a micro USB cable and open Tera Term. EDBG COM Port number on your PC may be different.
 
-![COM Port Selection](IA611-SAMD21-DEMO1/Documents/images/tera_term_com.jpg)
+![COM Port Selection](IA611-SAMD21-DEMO/Documents/images/tera_term_com.jpg)
 
 Demo application configures EDBG UART as 115200 8-n-1.
 
 To set this settings in Tera Term, select Menu *Setup -> Serial Port*
 and enter values as shown below, then click button *New Settings*.
 
-![Serial Port Setup](IA611-SAMD21-DEMO1/Documents/images/tera_term_serial_setting.jpg)
+![Serial Port Setup](IA611-SAMD21-DEMO/Documents/images/tera_term_serial_setting.jpg)
 
 To correctly display Demo output in Tera Term, select Menu *Setup -> Terminal*
 and enter values as shown below, then click button *OK*. Ignore the locale, output will be only ASCII.
 
-![Serial Port Setup](IA611-SAMD21-DEMO1/Documents/images/tera_term_terminal_setting.jpg)
+![Serial Port Setup](IA611-SAMD21-DEMO/Documents/images/tera_term_terminal_setting.jpg)
 
 # Flash the Demo Binary
-For convenience, the demo binary is located at Binfiles/IA611-SAMD21-DEMO1.bin
+For convenience, the demo binary is located at Binfiles/IA611-SAMD21-DEMO.bin
 
 Connect the *DEBUG USB* port of the board to PC with a micro USB cable. On Windows OS, File explorer will open up showing the *XPLAINED* drive contents.
 
@@ -36,7 +36,7 @@ Copy-Paste the demo binary to this *XPLAINED* drive. Copying process may take so
 If this is the first time board was flashed or reflashed after chip erase then you will 
 see a license not found message on serial terminal.
 
-![Unlicensed](IA611-SAMD21-DEMO1/Documents/images/unlicensed.jpg)
+![Unlicensed](IA611-SAMD21-DEMO/Documents/images/unlicensed.jpg)
 
 ## Setup Python Environment
 Ensure you have python3 installed on your PC.
@@ -63,7 +63,7 @@ You will messages as below on the terminal. When you see the message indicating 
 
 The number before *Data Detected* event indicates how many events were detected till now. The number in the Payload parentheses indicates payload length. 
 
-![Success Output](IA611-SAMD21-DEMO1/Documents/images/success.jpg)
+![Success Output](IA611-SAMD21-DEMO/Documents/images/success.jpg)
 
 # Provisioning Commands over UART
 The general format of commands sent from PC to board is:
