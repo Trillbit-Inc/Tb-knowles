@@ -56,7 +56,7 @@
 #define EOL    "\n"
 #define HEADER_STRING \
     "Trillbit Data over Sound Demo with Knowles IA61x SmartMic"EOL \
-    "-- Demo Version: 1.1 --"EOL \
+    "-- Demo Version: 1.2 --"EOL \
 	"-- Board: "BOARD_NAME " --"EOL \
 	"-- Compiled: "__DATE__ " "__TIME__ " --"EOL
 
@@ -425,7 +425,20 @@ int main (void)
 		ret = start_sdk(stored_lic);
 		if (ret < 0)
 		{
-			HW_Error();
+			if ((ret == TRILL_HOST_ERR_INVALID_SDK_LICENSE) ||
+				(ret == TRILL_HOST_ERR_LICENSE_NOT_FOUND))
+			{
+				printf("Trillbit Host SDK License provided is Invalid. Starting provisioning...\n");
+				ret = provision_host();
+				if (ret < 0)
+				{
+					HW_Error();
+				}
+			}
+			else
+			{
+				HW_Error();
+			}
 		}
 	}
 	
