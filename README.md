@@ -45,7 +45,7 @@ Open command prompt shell (Not Power Shell) and run the following commands in th
 ```
 > python -m venv py_env
 > py_env\Scripts\activate.bat
-> pip install pyserial
+> pip install pyserial requests
 ```
 
 Before running the license program disconnect Tera Term from Menu *File -> Disconnect*,
