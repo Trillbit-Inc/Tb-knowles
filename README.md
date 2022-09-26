@@ -59,7 +59,7 @@ Follow the instructions the from the license program. If successful you will see
 After License was downloaded in the previous step, SAMD21 was ready to detect data however since the Tera Term was disconnected you won't see any messages.
 
 Connect Tera Term again and press the *RESET* switch on SAMD21 board. 
-You will messages as below on the terminal. When you see the message indicating algorithm is ready for data detection, play some data sound. Point the phone/speaker towards IA611 board. Currently only SSI0 is supported.
+You will see messages as below on the terminal. When you see the message indicating algorithm is ready for data detection, play some data sound on the TrillPlay app. Point the phone/speaker towards IA611 board. Currently only SSI0 is supported.
 
 The number before *Data Detected* event indicates how many events were detected till now. The number in the Payload parentheses indicates payload length. 
 
