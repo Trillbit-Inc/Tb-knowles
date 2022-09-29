@@ -26,7 +26,7 @@ and enter values as shown below, then click button *OK*. Ignore the locale, outp
 ![Serial Port Setup](IA611-SAMD21-DEMO/Documents/images/tera_term_terminal_setting.jpg)
 
 # Flash the Demo Binary
-For convenience, the demo binary is located at Binfiles/IA611-SAMD21-DEMO.bin
+The demo binary is located at Binfiles/IA611-SAMD21-DEMO.bin
 
 Connect the *DEBUG USB* port of the board to PC with a micro USB cable. On Windows OS, File explorer will open up showing the *XPLAINED* drive contents.
 
