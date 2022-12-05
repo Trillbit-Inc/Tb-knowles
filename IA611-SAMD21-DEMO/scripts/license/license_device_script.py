@@ -43,6 +43,7 @@ def get_device_license(device_id, client_secret_json):
 
     user_lic = response_json["payload"]["license"]
     user_lic_bytes = user_lic.encode('utf-8')
+
     return user_lic_bytes
 
 
